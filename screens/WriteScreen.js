@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View,Alert,KeyboardAvoidingView,ScrollView} from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View,Alert,FlatList,KeyboardAvoidingView,ScrollView} from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 import * as firebase from 'firebase';
 import db from '../config.js'
@@ -40,7 +40,7 @@ render(){
           }}
         />
 
-        <ScrollView>  
+        <FlatList>  
 
             <View style={styles.inputView}> 
             
@@ -95,7 +95,7 @@ render(){
                 </TouchableOpacity>
             </View>
 
-        </ScrollView> 
+        </FlatList> 
 
     </View>
     )
