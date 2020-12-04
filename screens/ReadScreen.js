@@ -30,7 +30,7 @@ this.setState({
              this.state.story.map((transaction,index)=>{
                  return(
               <View key={index} style={{borderBottomWidth:2,marginTop:50}}>
-                   <Text>{'Tile:'+ transaction.Title}</Text>
+                   <Text>{'Title:'+ transaction.Title}</Text>
                <Text>{'Author'+ transaction.Author}</Text>  
                       <Text>{'Story:'+ transaction.Story}</Text> 
                     </View>
